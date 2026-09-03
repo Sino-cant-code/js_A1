@@ -1,10 +1,11 @@
-//Question No. 1
+//Question No.1
 function describeValue(value) {
   const type = typeof value;
   const truthiness = value ? "truthy" : "falsy";
   return `${type} | ${truthiness}`;
 }
-//Question No. 2
+
+//Question No.2
 function getDayType(day) {
   const d = day.toLowerCase();
   switch (d) {
@@ -23,7 +24,8 @@ function getDayType(day) {
 }
 
 
-//Question No. 3
+//Question No.3
+
 function validateUsername(username) {
   if (username.length < 4) return "Too Short";
   if (username.includes(" ")) return "No Space Allowed";
@@ -32,7 +34,7 @@ function validateUsername(username) {
 }
 
 
-//Question No. 4
+//Question No.4
 function getCngFare(distance, isNight = false, waitingMinutes = 0) {
   let fare = 50;
   if (distance > 2) {
@@ -45,7 +47,8 @@ function getCngFare(distance, isNight = false, waitingMinutes = 0) {
   }
   return total;
 }
-//Question No. 5
+//Question No.5
+
 const getChaseVerdict = (target, scored, ballsLeft) => {
   const runsNeeded = target - scored;
   if (runsNeeded <= 0) return "Won";
